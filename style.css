@@ -1,0 +1,134 @@
+/*---------------------
+  Universal CSS
+-----------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+/* if we didnot use this we will not be able to center the card verically. */
+html, body {
+  height: 100%;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*--------
+  Color
+---------*/
+
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+}
+
+
+/*--------
+  Body
+--------*/
+
+body{
+  background-color: var(--color-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*------
+  Card
+------*/
+
+.card{
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 17px;
+  width: 80%;
+  max-width: 425px;
+  padding: 25px;
+  box-shadow: 8px 8px var(--color-gray-950);
+}
+
+.card-image{
+  border-radius: 17px;
+  width: 100%;
+  height: 230px;
+}
+
+.card-badge{
+  background-color: var(--color-yellow);
+  color: var(--color-gray-950);
+  font-weight: 900;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.card-date{
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-title{
+  margin-top: 22px;
+  font-weight: 800;
+}
+
+.card-title:hover{
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+.card-details{
+  margin-top: 19px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  line-height: 25px;
+}
+
+.card-writter-info{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-writter-image{
+  width: 38px;
+}
+
+.card-writter-name{
+  font-weight: 900;
+  font-size: 15px;
+}
